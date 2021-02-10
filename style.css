@@ -1,0 +1,10 @@
+h1, h2 {
+  font-family: Lato;
+}
+
+textarea {
+  display: block;
+  margin-top: 10px;
+  width: 600px;
+  height: 400px;
+}
