@@ -7,9 +7,9 @@ appDiv.innerHTML = `<h1>JavaScript Calls Validation</h1>`;
 
 const status = document.getElementById("status");
 
-window.invokeCSCode = function invokeCSCode(data) {
+window.invokeCSCode = function invokeCSCode(data, param) {
   try {
-    var xamarinObj = { key: data };
+    var xamarinObj = { command: data, parameters: param };
     var payload = JSON.stringify(xamarinObj);
     if (window.invokeCSharpAction != null) {
       status.textContent += "\nOK" + payload;
